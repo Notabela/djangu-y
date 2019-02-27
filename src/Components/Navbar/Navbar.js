@@ -30,7 +30,7 @@ export default class NavComponent extends Component
   render() {
     return (
       <div>
-        <Navbar color="warning" light expand="md">
+        <Navbar light expand="md">
           <NavbarBrand href="/">Djangu-y</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
