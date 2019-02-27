@@ -30,4 +30,16 @@
     margin-top: 10%;
     padding-left: 5%;
     padding-right: 5%;
+    min-height: 300px;
+}
+
+#section-3-left, #section-3-right {
+    min-height: 200px;
+}
+
+#countdown {
+    text-align: center;
+    padding-top: 15%;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
 }
