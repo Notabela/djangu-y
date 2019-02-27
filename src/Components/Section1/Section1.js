@@ -11,8 +11,14 @@ const Section1 = () => {
     }
 
     return (
-        <div className="section" id="section_1" style={cssStyles}>
-            <p>Speak<br/>Djangu-y</p>
+        <div>
+            <div className="section" id="section_1" style={cssStyles}>
+                <p>Speak<br/>Djangu-y</p>
+            </div>
+
+            <div className="section" id="section_2">
+                <p className="animated bounceInUp">Some Cool Animating Information will go Here</p>
+            </div>
         </div>
     )
 
