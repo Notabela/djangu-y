@@ -2,6 +2,10 @@
   "name": "djangu-y",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.5.0",
+    "node": "11.6.0"
+  },
   "dependencies": {
     "bootstrap": "^4.3.1",
     "react": "^16.8.3",

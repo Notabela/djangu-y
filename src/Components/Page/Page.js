@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import NavComponent from '../Navbar/Navbar'
-import Section from '../Section/Section'
+import Section1 from '../Section1/Section1'
 
 class Page extends Component
 {
@@ -8,8 +8,7 @@ class Page extends Component
     {
         return (
             <div>
-                <NavComponent />
-                <Section />
+                <Section1 />
             </div>
         )
     }
