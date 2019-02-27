@@ -1,0 +1,16 @@
+#section_1{
+    width: 100%;
+    min-height: 600px;
+}
+
+#section_1 p{
+    font-size: 90px;
+    font-family: 'PinyonScriptRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+    color: white;
+    text-align: right;
+    padding-top: 15%;
+    padding-right: 10%;
+    padding-bottom: 0;
+}
