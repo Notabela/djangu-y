@@ -33,8 +33,11 @@
     min-height: 300px;
 }
 
-#section-3-left, #section-3-right {
-    min-height: 200px;
+#section-3-left, #section-3-right, #section_4{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
 #countdown {
@@ -42,4 +45,17 @@
     padding-top: 15%;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+.section-center {
+    width: 100%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.footer {
+    margin-top: 2%;
+    font-family: 'Open Sans'
 }

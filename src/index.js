@@ -6,7 +6,32 @@ import 'animate.css'
 import Page from './Components/Page/Page';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<Page />, document.getElementById('root'));
+const section3Right = [
+    {
+        imgUrl: "http://c1.staticflickr.com/1/52/125148217_fdd616657c.jpg",
+        altText: "really cool image",
+        text: "This is a cool text that I'm putting here, this will be replaced"
+    },
+    {
+        imgUrl: "http://c1.staticflickr.com/1/52/125148217_fdd616657c.jpg",
+        altText: "really cool image",
+        text: "This is a cool text that I'm putting here, this will be replaced"
+    },
+    {
+        imgUrl: "http://c1.staticflickr.com/1/52/125148217_fdd616657c.jpg",
+        altText: "really cool image",
+        text: "This is a cool text that I'm putting here, this will be replaced"
+    },
+    {
+        imgUrl: "http://c1.staticflickr.com/1/52/125148217_fdd616657c.jpg",
+        altText: "really cool image",
+        text: "This is a cool text that I'm putting here, this will be replaced"
+    }
+]
+
+const countDownDate = new Date("April 21 2019 12:30");
+
+ReactDOM.render(<Page rightSection3Data={section3Right} countDownDate={countDownDate}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
