@@ -29,9 +29,12 @@ const section3Right = [
     }
 ]
 
-const countDownDate = new Date("April 21 2019 12:30");
+const countDownDate = new Date("April 21 2019 12:30")
+const splashImageUrl = 'https://www.createwebsite.net/wp-content/uploads/2015/09/Infinite.gif'
 
-ReactDOM.render(<Page rightSection3Data={section3Right} countDownDate={countDownDate}/>, document.getElementById('root'));
+ReactDOM.render(<Page rightSection3Data={section3Right} 
+                      countDownDate={countDownDate} 
+                      splashImage={splashImageUrl}/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

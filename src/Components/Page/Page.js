@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import SplashPage from '../Sections/SplashPage'
 import Section1 from '../Sections/Section1'
 import Section2 from '../Sections/Section2'
 import Section3 from '../Sections/Section3'
@@ -15,22 +16,36 @@ class Page extends Component
 
         this.state = {
             rightSection3Data: props.rightSection3Data,
-            countDownDate: props.countDownDate
+            countDownDate: props.countDownDate,
+            splashImage: props.splashImage,
+            showSplash: true,
         }
+
+        setTimeout( () => {
+            this.setState({
+               showSplash: false,
+            })
+        }, 1000)
     }
 
     render()
     {
-        return (
-            <div>
-                <Section1 />
-                <Section2 />
-                <Section3 countDownFrom={this.props.countDownDate} 
-                          imageTextBucket={this.props.rightSection3Data}/>
-                <Section4 imageTextBucket={this.props.rightSection3Data}/>
-                <Section5 />
-            </div>
-        )
+        if (this.state.showSplash)
+        {
+            return <div id="splash-page-wrapper"><SplashPage image={this.state.splashImage}/></div>
+
+        } else {
+            return (
+                <div className='fade-in'>
+                    <Section1 />
+                    <Section2 />
+                    <Section3 countDownFrom={this.state.countDownDate} 
+                            imageTextBucket={this.state.rightSection3Data}/>
+                    <Section4 imageTextBucket={this.state.rightSection3Data}/>
+                    <Section5 />
+                </div>
+            )
+        }
     }
 }
 
