@@ -19,6 +19,11 @@
  animation-duration:0.5s;
 }
 
+.page{
+    width: 100%;
+    height: 100%;
+}
+
 #section_1{
     width: 100%;
     min-height: 700px;
@@ -52,18 +57,32 @@
     min-height: 300px;
 }
 
-#section-3-left, #section-3-right, #section_4{
+#section_4{
     display: flex;
     font-family: 'Montserrat', sans-serif;
     justify-content: center;
     align-items: center;
 }
 
-#countdown {
-    text-align: center;
-    padding-top: 15%;
-    font-size: 2rem;
-    font-family: 'Montserrat', sans-serif;
+#section_3{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#section-3-float-text {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 1;
+}
+
+#section-3-countdown {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
 }
 
 .section-center {

@@ -36,7 +36,7 @@ class Page extends Component
 
         } else {
             return (
-                <div className='fade-in'>
+                <div className='fade-in page'>
                     <Section1 />
                     <Section2 />
                     <Section3 countDownFrom={this.state.countDownDate} 

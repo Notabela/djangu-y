@@ -2,65 +2,61 @@ import React from 'react'
 import {Container, Row, Col} from 'reactstrap'
 import Countdown from 'react-countdown-now'
 
-const SectionInfo3 = ({imageUrl, altText, text}) => {
-
-    const styles = {
-        marginTop: '3%'
-    }
-
-    return (
-        <div>
-            <Row style={styles}>
-                <Col sm="10">
-                    <p>{text}</p>
-                </Col>
-                <Col sm="2">
-                    <img src={imageUrl} alt={altText} width="36" height="36"/>
-                </Col>
-            </Row>
-        </div>
-    )
-}
 
 const Section3 = ({countDownFrom, imageTextBucket}) => {
 
     const renderer = ({ days, hours, minutes, seconds, completed }) => {
         return (
-            <div id="countdown">
-            <p>Jours restant avant le lancement de l’application</p>
-            <br></br>
-            <p>{days} days, {hours} hours, {minutes} minutes and {seconds} seconds</p>
+            <div className="countdown">
+                <p>Some text here</p>
+                <p>{days}:{hours}:{minutes}:{seconds}</p>
             </div>
         )
     }
+    
 
-    const csStyleLeft = {
-        background: 'yellow'
+    const yellowBox = {
+        background: 'yellow',
+        paddingTop: '5%'
     }
     
-    const csStyleRight = {
-        background: 'orange'
+    const orangeBox = {
+        background: 'orange',
+        paddingTop: '5%'
     }
 
     return (
         <Container fluid={true}>
             <div id="section_3">
+                <div id="section-3-float-text" className='text-center'>
+                    <p>Random Floating P tag</p>
+                </div>
+                <div id='section-3-countdown' className='text-center'>
+                    <Countdown date={countDownFrom} renderer={renderer}/>
+                </div>
+                <div className='text-center' id='section-3-grid'>
                 <Row>
-                   <Col id='section-3-left' style={csStyleLeft} sm="6">
-                   <Countdown date={countDownFrom} renderer={renderer}/>
-                   </Col>
-
-                   <Col id='section-3-right' style={csStyleRight} sm="6">
-                        <div className='section-center'>
-                            <p style={{textAlign: 'center'}}>Comment ça marche ?</p>
-                            { imageTextBucket.map( (content, i) => {
-                                return <SectionInfo3 key={i} 
-                                        imageUrl={content.imgUrl} 
-                                        altText={content.altText} text={content.text} />
-                            })}
-                        </div>
-                   </Col> 
+                    <Col xs="6" style={orangeBox}>
+                        <p>1</p>
+                        <p>some information</p>
+                    </Col>
+                    <Col xs="6" style={yellowBox}>
+                        <p>2</p>
+                        <p>some information</p>
+                    </Col>
                 </Row>
+
+                <Row>
+                    <Col xs="6" style={yellowBox}>
+                        <p>3</p>
+                        <p>some information</p>
+                    </Col>
+                    <Col xs="6" style={orangeBox}>
+                        <p>4</p>
+                        <p>some information</p>
+                    </Col>
+                </Row>
+                </div>
             </div>
         </Container>
     )
