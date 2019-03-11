@@ -1,6 +1,7 @@
 import React from 'react'
 import {Container, Row, Col} from 'reactstrap'
 import Countdown from 'react-countdown-now'
+import './about.scss'
 
 
 const Section3 = ({countDownFrom, imageTextBucket}) => {

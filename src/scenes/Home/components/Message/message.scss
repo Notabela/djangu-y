@@ -1,0 +1,25 @@
+$colorA: #05386B;
+$colorB: #379683;
+$colorC: #5CDB95;
+$colorD: #8EE4AF;
+$colorE: #EDF5E1;
+
+#message p{
+    font-size: 2.5rem;
+    color: $colorE;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+
+.message-wrapper {
+    background-color: $colorB;
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
+.slideInUp {
+    animation-duration: 0.3s;
+}

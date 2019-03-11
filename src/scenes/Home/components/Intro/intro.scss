@@ -1,0 +1,50 @@
+$colorA: #05386B;
+$colorB: #379683;
+$colorC: #5CDB95;
+$colorD: #8EE4AF;
+$colorE: #EDF5E1;
+
+#intro{
+    position: relative;
+    width: 100%;
+    min-height: 600px;
+}
+
+#intro p{
+    font-size: 7rem;
+    font-family: 'PinyonScriptRegular'; 
+    font-weight: normal; 
+    font-style: normal; 
+    color: black;
+}
+
+.intro-wrapper {
+    background-color: $colorE;
+    padding-bottom: 2%;
+}
+
+#topic {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#intro-courses{
+    width: 50%;
+    margin-left: 25%;
+}
+
+#intro-courses p{
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 600px) and (min-width: 20px) {
+    #intro{
+        min-height: 500px;
+    }
+
+    #intro p{
+        font-size: 5rem;
+    }
+}
