@@ -14,7 +14,7 @@ const Footer = () => {
             </Row>
             <Row>
                 <Col>
-                <p className='notabela'><FaLaptopCode color='blue'/> with <span id='react-icon'><FaReact color='#00d8ff'/></span> by notabela</p>
+                <p className='notabela'><FaLaptopCode color='blue'/> avec <span id='react-icon'><FaReact color='#00d8ff'/></span> par notabela</p>
                 </Col>
             </Row>
         </Container>
