@@ -31,7 +31,8 @@ export default class Message extends Component
             <div id='message' className='text-center'>
                 <VisibilitySensor onChange={this.onMessageVisible}>
                 <p className={ this.state.messageVisible ? 'animated slideInUp' : 'hide' }>
-                    Changer notre maniére díapprendre, avec une touche de technologie
+                Changer votre manière d'apprendre <br/>
+		            avec une touche de technologie
                 </p>
                 </VisibilitySensor>
             </div>

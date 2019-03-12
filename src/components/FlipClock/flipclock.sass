@@ -7,31 +7,45 @@ $easeInOut: cubic-bezier(0.455, 0.03, 0.515, 0.955)
 
 $turnDuration: 0.6s
 
+$colorA: #05386B
+$colorB: #379683
+$colorC: #5CDB95
+$colorD: #8EE4AF
+$colorE: #EDF5E1
+
 // Animation mixin
 =animate($name, $easing, $duration: 300ms, $delay: 0s, $iteration: 1, $direction: normal, $fill-mode: forwards)
 	animation: $name $duration $easing $delay $iteration $direction $fill-mode
 
 $border: whitesmoke
-$card: white
+$card: $colorB
 $font-family: 'Droid Sans Mono', monospace
 $font-size: 3em
 $font-width: lighter
-$font-color: lighten(#05386B, 20%)
+$font-color: lighten($colorE, 20%)
 
 .flipClock .col-1
 	padding: 0
 	margin: 0
+	max-width: 100%
 
 .flipUnitContainer
-	display: block
 	position: relative
-	width: 90px
+	width: 100px
 	height: 80px
 	perspective-origin: 50% 50%
 	perspective: 300px
 	background-color: $card
 	border-radius: 3px
 	box-shadow: 0px 10px 10px -10px grey
+
+@media screen and (max-width: 600px) and (min-width: 20px)
+	.flipUnitContainer
+		width: 60px
+
+@media screen and (max-width: 1000px) and (min-width: 600px)
+	.flipUnitContainer
+		width: 80px
 
 .upperCard, .lowerCard
 	display: flex

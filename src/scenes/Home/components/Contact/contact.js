@@ -26,13 +26,13 @@ export default class Contact extends Component
                 <Col sm="12" md={{ size: 8, offset: 2 }}>
                 <Form id="subscribe-form" onSubmit={this.submitForm}>
                     <FormGroup>
-                        <Input type="text" placeholder="Your Name"/>
+                        <Input type="text" placeholder="Votre Nom"/>
                     </FormGroup>
                     <FormGroup>
-                        <Input type="email" placeholder="Your Email Address"/>
+                        <Input type="email" placeholder="Votre Adresse E-mail"/>
                     </FormGroup>
                     <FormGroup>
-                        <Button>Submit</Button>
+                        <Button>Envoyer</Button>
                     </FormGroup>
                 </Form>
                 </Col>

@@ -228,35 +228,35 @@ export default class FlipClock extends React.Component {
                 <Row className='text-center justify-content-center'>
                 <Col xs="1">
                   <FlipUnitContainer 
-                      unit={'weeks'}
+                      unit={'sems'}
                       digit={weeks} 
                       shuffle={weeksShuffle} 
                       />
                 </Col>
                 <Col xs="1">
                   <FlipUnitContainer 
-                      unit={'days'}
+                      unit={'jours'}
                       digit={days} 
                       shuffle={daysShuffle} 
                       />
                 </Col>
                 <Col xs="1">             
                   <FlipUnitContainer 
-                      unit={'hours'}
+                      unit={'heures'}
                       digit={hours} 
                       shuffle={hoursShuffle} 
                       />
                 </Col>
                 <Col xs="1">
                   <FlipUnitContainer 
-                      unit={'minutes'}
+                      unit={'mins'}
                       digit={minutes} 
                       shuffle={minutesShuffle} 
                       />
                 </Col>
                 <Col xs="1">
                   <FlipUnitContainer 
-                      unit={'seconds'}
+                      unit={'secs'}
                       digit={seconds} 
                       shuffle={secondsShuffle} 
                       />

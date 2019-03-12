@@ -26,7 +26,7 @@ export default class Home extends Component
             // rightSection3Data: props.rightSection3Data,
             // countDownDate: props.countDownDate,
             // splashImage: props.splashImage,
-            showSplash: true
+            showSplash: false
         }
 
         this.imageData = [
@@ -87,7 +87,7 @@ export default class Home extends Component
                     <Intro />
                     <Message />
                     <Usage imageData={this.imageData}/>
-                    {/* <About countDownFrom='April 28, 2019' /> */}
+                    <About countDownFrom='April 28, 2019' />
                     <Contact/>
                     <Footer/>
                 </Container>
