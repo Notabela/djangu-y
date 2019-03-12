@@ -1,15 +1,15 @@
 {
-  "main.css": "/djangu-y/static/css/main.6b64b1d2.chunk.css",
-  "main.js": "/djangu-y/static/js/main.c0c77723.chunk.js",
-  "main.js.map": "/djangu-y/static/js/main.c0c77723.chunk.js.map",
+  "main.css": "/djangu-y/static/css/main.7c1822f7.chunk.css",
+  "main.js": "/djangu-y/static/js/main.e149b4bd.chunk.js",
+  "main.js.map": "/djangu-y/static/js/main.e149b4bd.chunk.js.map",
   "runtime~main.js": "/djangu-y/static/js/runtime~main.c46c324b.js",
   "runtime~main.js.map": "/djangu-y/static/js/runtime~main.c46c324b.js.map",
   "static/css/2.a2f10885.chunk.css": "/djangu-y/static/css/2.a2f10885.chunk.css",
   "static/js/2.dbba6a99.chunk.js": "/djangu-y/static/js/2.dbba6a99.chunk.js",
   "static/js/2.dbba6a99.chunk.js.map": "/djangu-y/static/js/2.dbba6a99.chunk.js.map",
   "index.html": "/djangu-y/index.html",
-  "precache-manifest.dbcf74e1153ccfa92bdc8837a9130812.js": "/djangu-y/precache-manifest.dbcf74e1153ccfa92bdc8837a9130812.js",
+  "precache-manifest.05413b0d17fd443d19db7592bb5e910f.js": "/djangu-y/precache-manifest.05413b0d17fd443d19db7592bb5e910f.js",
   "service-worker.js": "/djangu-y/service-worker.js",
   "static/css/2.a2f10885.chunk.css.map": "/djangu-y/static/css/2.a2f10885.chunk.css.map",
-  "static/css/main.6b64b1d2.chunk.css.map": "/djangu-y/static/css/main.6b64b1d2.chunk.css.map"
+  "static/css/main.7c1822f7.chunk.css.map": "/djangu-y/static/css/main.7c1822f7.chunk.css.map"
 }
