@@ -26,7 +26,7 @@ export default class Home extends Component
             // rightSection3Data: props.rightSection3Data,
             // countDownDate: props.countDownDate,
             // splashImage: props.splashImage,
-            showSplash: false
+            showSplash: true
         }
 
         this.imageData = [
