@@ -1,0 +1,20 @@
+$colorA: #05386B;
+$colorB: #379683;
+$colorC: #5CDB95;
+$colorD: #8EE4AF;
+$colorE: #EDF5E1;
+
+.contact{
+    font-size: 1.5em;
+    padding-top: 5%;
+    background-color: $colorD;
+}
+
+.contact p {
+    padding-bottom: 5%;
+}
+
+#subscribe-form button{
+    background-color: $colorA;
+    padding: 1% 5% 1% 5%;
+}

@@ -1,0 +1,37 @@
+$colorA: #05386B;
+$colorB: #379683;
+$colorC: #5CDB95;
+$colorD: #8EE4AF;
+$colorE: #EDF5E1;
+
+.footer{
+    padding-top: 2%;
+    color: $colorA;
+    background-color: $colorE;
+}
+
+#footer-blurb{
+    font-size: 1.5rem;
+}
+
+.notabela {
+    font-family: 'Indie Flower';
+}
+
+#react-icon svg{
+    -webkit-animation: spin 1s infinite;
+    animation: spin 1s linear infinite;
+  }
+
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}

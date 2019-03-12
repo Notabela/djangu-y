@@ -1,66 +1,55 @@
-import React from 'react'
+import React, {Component} from 'react'
 import {Container, Row, Col} from 'reactstrap'
-import Countdown from 'react-countdown-now'
+import FlipClock from '../../../../components/FlipClock/flipclock'
 import './about.scss'
 
+export default class About extends Component
+{
 
-const Section3 = ({countDownFrom, imageTextBucket}) => {
-
-    const renderer = ({ days, hours, minutes, seconds, completed }) => {
+    render()
+    {
         return (
-            <div className="countdown">
-                <p>Some text here</p>
-                <p>{days}:{hours}:{minutes}:{seconds}</p>
-            </div>
+            <Container fluid={true} id="about">
+                <Container fluid={true}>
+                    <Row>
+                        <Col id="about-float-text" className='text-center'>
+                            <p>Comment ça marche?</p>
+                        </Col>
+                    </Row>
+                    <Row id='about-countdown' className='text-center'>
+                        <Col>
+                            <p id='countdown-text'>Jours restant avant<br/>
+                            le lancement de l’application
+                            </p>
+                            <FlipClock dateString={this.props.countDownFrom}/>
+                        </Col>
+                    </Row>
+                </Container>
+                <Container fluid={true} className='text-center' id='about-grid'>
+                    <Row>
+                        <Col xs="6" className="about-box about-1-box">
+                            <p className="about-number">1</p>
+                            <p>Télécharger l'application</p>
+                        </Col>
+                        <Col xs="6" className="about-box about-2-box">
+                            <p className="about-number">2</p>
+                            <p>Payer les frais d'accés</p>
+                        </Col>
+                    </Row>
+
+                    <Row>
+                        <Col xs="6" className="about-box about-3-box">
+                            <p className="about-number">3</p>
+                            <p>Choisir son cours</p>
+                        </Col>
+                        <Col xs="6" className="about-box about-4-box">
+                            <p className="about-number">4</p>
+                            <p>Suivre en direct le cours et revoir le <br/>
+                            même cours aprés la diffusion en direct</p>
+                        </Col>
+                    </Row>
+                </Container>
+            </Container>
         )
     }
-    
-
-    const yellowBox = {
-        background: 'yellow',
-        paddingTop: '5%'
-    }
-    
-    const orangeBox = {
-        background: 'orange',
-        paddingTop: '5%'
-    }
-
-    return (
-        <Container fluid={true}>
-            <div id="section_3">
-                <div id="section-3-float-text" className='text-center'>
-                    <p>Random Floating P tag</p>
-                </div>
-                <div id='section-3-countdown' className='text-center'>
-                    <Countdown date={countDownFrom} renderer={renderer}/>
-                </div>
-                <div className='text-center' id='section-3-grid'>
-                <Row>
-                    <Col xs="6" style={orangeBox}>
-                        <p>1</p>
-                        <p>some information</p>
-                    </Col>
-                    <Col xs="6" style={yellowBox}>
-                        <p>2</p>
-                        <p>some information</p>
-                    </Col>
-                </Row>
-
-                <Row>
-                    <Col xs="6" style={yellowBox}>
-                        <p>3</p>
-                        <p>some information</p>
-                    </Col>
-                    <Col xs="6" style={orangeBox}>
-                        <p>4</p>
-                        <p>some information</p>
-                    </Col>
-                </Row>
-                </div>
-            </div>
-        </Container>
-    )
 }
-
-export default Section3

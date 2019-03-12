@@ -1,8 +1,12 @@
 import React, {Component} from 'react'
+import {Container} from 'reactstrap'
 import Splash from '../../components/Splash/splash'
 import Intro from './components/Intro/intro'
 import Message from './components/Message/message'
 import Usage from './components/Usage/usage'
+import Contact from './components/Contact/contact'
+import Footer from '../../components/Footer/footer'
+import About from './components/About/about'
 import './home.scss'
 // import Section1 from '../Sections/Section1'
 // import Section2 from '../Sections/Section2'
@@ -79,17 +83,14 @@ export default class Home extends Component
 
         } else {
             return (
-                <div className='fade-in page'>
+                <Container fluid={true} className='fade-in page'>
                     <Intro />
                     <Message />
                     <Usage imageData={this.imageData}/>
-                    {/* <Section1 />
-                    <Section2 />
-                    <Section3 countDownFrom={this.state.countDownDate} 
-                            imageTextBucket={this.state.rightSection3Data}/>
-                    <Section4 imageTextBucket={this.state.rightSection3Data}/>
-                    <Section5 /> */}
-                </div>
+                    {/* <About countDownFrom='April 28, 2019' /> */}
+                    <Contact/>
+                    <Footer/>
+                </Container>
             )
         }
     }
