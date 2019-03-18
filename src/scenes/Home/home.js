@@ -26,7 +26,8 @@ export default class Home extends Component
             // rightSection3Data: props.rightSection3Data,
             // countDownDate: props.countDownDate,
             // splashImage: props.splashImage,
-            showSplash: true
+            showSplash: true,
+            childVisibility: true
         }
 
         this.imageData = [
@@ -70,28 +71,25 @@ export default class Home extends Component
 
         setTimeout( () => {
             this.setState({
-               showSplash: false,
+                showSplash: false,
             })
-        }, 1500)
+        }, 2000)
     }
 
     render()
     {
-        if (this.state.showSplash)
-        {
-            return <Splash />
-
-        } else {
-            return (
-                <Container fluid={true} className='fade-in page'>
-                    <Intro />
-                    <Message />
-                    <Usage imageData={this.imageData}/>
-                    <About countDownFrom='April 28, 2019' />
-                    <Contact/>
-                    <Footer/>
-                </Container>
-            )
-        }
+        return (
+            <div>
+            <Splash isVisible={this.state.showSplash}/>
+            <Container fluid={true} className='page'>
+                <Intro />
+                <Message splashVisible={this.state.showSplash}/>
+                <Usage imageData={this.imageData}/>
+                <About countDownFrom='April 28, 2019' />
+                <Contact/>
+                <Footer/>
+            </Container>
+            </div>
+        )
     }
 }

@@ -9,6 +9,17 @@ const ImageBullet = ({imageUrl, altText, textTitle, text}) => {
         marginTop: '3%'
     }
 
+    const onMessageVisible = (isVisible) => {
+        this.messageVisible = isVisible
+
+        if (isVisible)
+        {
+            this.setState({
+                messageVisible: isVisible
+            })
+        }
+    }
+
     return (
         <Container fluid={true}>
             <Row style={styles}>
@@ -17,7 +28,7 @@ const ImageBullet = ({imageUrl, altText, textTitle, text}) => {
                 </Col>
 
                 <Col xs="9">
-                    <VisibilitySensor>
+                    <VisibilitySensor onChange={_=>_}>
                         <p className='image-bullet-topics'><strong>{textTitle}</strong></p>
                     </VisibilitySensor>
                     <p>{text}</p>
