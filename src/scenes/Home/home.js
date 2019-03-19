@@ -84,7 +84,7 @@ export default class Home extends Component
             <Container fluid={true} className='page'>
                 <Intro />
                 <Message splashVisible={this.state.showSplash}/>
-                <Usage imageData={this.imageData}/>
+                <Usage imageData={this.imageData} splashVisible={this.state.splashVisible}/>
                 <About countDownFrom='April 28, 2019' />
                 <Contact/>
                 <Footer/>
