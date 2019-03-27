@@ -1,16 +1,16 @@
 {
-  "main.css": "/djangu-y/static/css/main.4e231b93.chunk.css",
-  "main.js": "/djangu-y/static/js/main.a65d77b0.chunk.js",
-  "main.js.map": "/djangu-y/static/js/main.a65d77b0.chunk.js.map",
+  "main.css": "/djangu-y/static/css/main.31d55ebf.chunk.css",
+  "main.js": "/djangu-y/static/js/main.5f696ca2.chunk.js",
+  "main.js.map": "/djangu-y/static/js/main.5f696ca2.chunk.js.map",
   "runtime~main.js": "/djangu-y/static/js/runtime~main.c46c324b.js",
   "runtime~main.js.map": "/djangu-y/static/js/runtime~main.c46c324b.js.map",
   "static/css/2.a2f10885.chunk.css": "/djangu-y/static/css/2.a2f10885.chunk.css",
   "static/js/2.ea63ead3.chunk.js": "/djangu-y/static/js/2.ea63ead3.chunk.js",
   "static/js/2.ea63ead3.chunk.js.map": "/djangu-y/static/js/2.ea63ead3.chunk.js.map",
   "index.html": "/djangu-y/index.html",
-  "precache-manifest.f8c7fb74c4fade61113726a6c7d1a49f.js": "/djangu-y/precache-manifest.f8c7fb74c4fade61113726a6c7d1a49f.js",
+  "precache-manifest.4ac07213089408391cbaf76a8e56797c.js": "/djangu-y/precache-manifest.4ac07213089408391cbaf76a8e56797c.js",
   "service-worker.js": "/djangu-y/service-worker.js",
   "static/css/2.a2f10885.chunk.css.map": "/djangu-y/static/css/2.a2f10885.chunk.css.map",
-  "static/css/main.4e231b93.chunk.css.map": "/djangu-y/static/css/main.4e231b93.chunk.css.map",
+  "static/css/main.31d55ebf.chunk.css.map": "/djangu-y/static/css/main.31d55ebf.chunk.css.map",
   "static/media/intro.scss": "/djangu-y/static/media/Aquatico-Regular.e5520ea0.otf"
 }

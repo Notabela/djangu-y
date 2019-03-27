@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "a65d77b01463c713bcbb",
-    "url": "/djangu-y/static/css/main.4e231b93.chunk.css"
+    "revision": "5f696ca24fae0611450a",
+    "url": "/djangu-y/static/css/main.31d55ebf.chunk.css"
   },
   {
-    "revision": "a65d77b01463c713bcbb",
-    "url": "/djangu-y/static/js/main.a65d77b0.chunk.js"
+    "revision": "5f696ca24fae0611450a",
+    "url": "/djangu-y/static/js/main.5f696ca2.chunk.js"
   },
   {
     "revision": "c46c324b9c67e135a95d",
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/djangu-y/static/media/Aquatico-Regular.e5520ea0.otf"
   },
   {
-    "revision": "534b62a33db91ba5a83c2c12a017da60",
+    "revision": "16b81846a59d418a8765f087cf76aba7",
     "url": "/djangu-y/index.html"
   }
 ];
