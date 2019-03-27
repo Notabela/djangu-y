@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Aquatico Regular';
-    src: url('/Aquatico-Regular.otf');
+    src: local('Aquatico Regular'), url(../../../../assets/Aquatico-Regular.otf) format('opentype');
 }
 
 $colorA: #05386B;
