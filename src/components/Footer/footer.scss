@@ -16,6 +16,15 @@ $colorE: #EDF5E1;
 
 .notabela {
     font-family: 'Indie Flower';
+
+    a {
+        color: $colorA;
+    }
+
+    a:hover {
+        color: $colorB;
+        text-decoration: none;
+    }
 }
 
 #react-icon svg{

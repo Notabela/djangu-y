@@ -10,3 +10,25 @@
     background-image: white !important;
 } */
 
+$primary: #379683;
+$secondary: #05386B;
+
+.navbar-light {
+
+    .navbar-brand {
+        color: $secondary;
+    }
+
+    .navbar-nav .nav-link{
+        color: $secondary;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: $primary;
+    }
+
+    .navbar-brand:hover {
+        color: $primary;
+    }
+}
+
