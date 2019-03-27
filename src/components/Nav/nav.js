@@ -31,15 +31,14 @@ export default class NavComponent extends Component
     return (
       <div>
         <Navbar light expand="md">
-          <NavbarBrand href="/">Djangu-Y</NavbarBrand>
+          <NavbarBrand href="/">Djangu-y</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
-              <NavItem><NavLink href="#">Intro</NavLink></NavItem>
-              <NavItem><NavLink href="#">Message</NavLink></NavItem>
-              <NavItem><NavLink href="#">Usage</NavLink></NavItem>
-              <NavItem><NavLink href="#">About</NavLink></NavItem>
-              <NavItem><NavLink href="#">Contact</NavLink></NavItem>
+              <NavItem><NavLink href="#message">Sur</NavLink></NavItem>
+              <NavItem><NavLink href="#usage">Fonctionnalités</NavLink></NavItem>
+              <NavItem><NavLink href="#about">Directions</NavLink></NavItem>
+              <NavItem><NavLink href="#contact">S'inscrire</NavLink></NavItem>
             </Nav>
           </Collapse>
         </Navbar>

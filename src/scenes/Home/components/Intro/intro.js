@@ -1,5 +1,5 @@
 import React from 'react'
-// import NavComponent from '../../../../components/Nav/nav'
+import NavComponent from '../../../../components/Nav/nav'
 import './intro.scss'
 
 const Intro = () => {
@@ -13,6 +13,7 @@ const Intro = () => {
 
     return (
         <div className='intro-wrapper'>
+            <NavComponent />
             <div id='intro' style={cssStyles}>
                 <div id='topic' className="shadows"><span>D</span><span>j</span><span>a</span><span>n</span><span>g</span><span>u</span><span>-</span><span style={{color: '#379683'}}>y</span></div>
                 {/* <div id='topic'><p>Djangu-<span style={{color: '#379683'}}>Y</span></p></div> */}

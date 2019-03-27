@@ -1,7 +1,7 @@
 import React from 'react'
 import './splash.scss'
 
-const Splash = () => {
+const Splash = ({isVisible}) => {
     const stop1 = {
         stopColor: '#FF56A1',
         stopOpacity: '1'
@@ -13,7 +13,7 @@ const Splash = () => {
     }
 
     return (
-        <div id="splash-page">
+        <div id="splash-page" className={!isVisible ? 'fadeOut' : ''}>
             <svg>
             <g>
                 <path d="M 50,100 A 1,1 0 0 1 50,0"/>

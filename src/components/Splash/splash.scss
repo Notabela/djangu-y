@@ -9,9 +9,11 @@ $path-length: 157px; // Retrieved using SVG's getTotalLength()
   height:100%;
   width: 100%;
   display: flex;
+  position: fixed;
   align-items: center;
   justify-content: center;
   background-color: #EDF5E1;
+  z-index: 9999999;
 }
 
 #splash-page svg {

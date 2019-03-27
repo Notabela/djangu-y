@@ -49,7 +49,7 @@ $colorE: #EDF5E1;
     transition: all 0.25s ease-out;
 }
 
-@media screen and (max-width: 600px) and (min-width: 20px) {
+@media screen and (max-width: 767px) and (min-width: 20px) {
     #intro{
         min-height: 500px;
     }

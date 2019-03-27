@@ -9,12 +9,28 @@ export default class Message extends Component
     {
         super(props)
 
+        // to trigger message showing and hiding
         this.state = {
             messageVisible: false
+        }
+
+        // to track whether the message is visible or not
+        this.messageVisible = false
+    }
+
+    componentWillReceiveProps(nextProps) 
+    {
+        // if props are sent, meaning the splash is complete
+        if (!nextProps.splashVisible)
+        {
+            this.setState({
+                messageVisible: this.messageVisible
+            })
         }
     }
 
     onMessageVisible = (isVisible) => {
+        this.messageVisible = isVisible
 
         if (isVisible)
         {

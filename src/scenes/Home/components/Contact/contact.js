@@ -13,7 +13,7 @@ export default class Contact extends Component
     render()
     {
         return (
-            <Container fluid={true} className='contact'>
+            <Container fluid={true} className='contact' id='contact'>
             <Row>
                 <Col sm="12" md={{ size: 8, offset: 2 }} className="text-center">
                     <p>
