@@ -3,7 +3,7 @@ import VisibilitySensor from 'react-visibility-sensor'
 import {Container, Row, Col} from 'reactstrap'
 import './usage.scss'
 
-const ImageBullet = ({imageUrl, altText, textTitle, text}) => {
+const ImageBullet = ({imgUrl, faImg, altText, textTitle, text}) => {
 
     const styles = {
         marginTop: '3%'
@@ -12,11 +12,12 @@ const ImageBullet = ({imageUrl, altText, textTitle, text}) => {
     return (
         <Container fluid={true}>
             <Row style={styles}>
-                <Col xs="3" className='bare-element'>
-                    <img src={imageUrl} alt={altText} />
+                <Col xs="2" className='bare-element'>
+                    <img src={imgUrl} alt={altText} />
+                    {/* <faImg.faClass size="3rem" color={faImg.color}/> */}
                 </Col>
 
-                <Col xs="9">
+                <Col xs="10">
                     <VisibilitySensor>
                         <p className='image-bullet-topics'><strong>{textTitle}</strong></p>
                     </VisibilitySensor>
@@ -42,10 +43,7 @@ export default class Usage extends Component
                     <div className='image-bullets'>
                         { this.props.imageData.map( (content, i) => {
                             return <ImageBullet key={i} 
-                                    imageUrl={content.imgUrl} 
-                                    altText={content.altText}
-                                    textTitle={content.textTitle}
-                                    text={content.text} />
+                                    {...content}/>
                         })}
                     </div>
                 </div>

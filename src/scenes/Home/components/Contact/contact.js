@@ -26,10 +26,10 @@ export default class Contact extends Component
                 <Col sm="12" md={{ size: 8, offset: 2 }}>
                 <Form id="subscribe-form" onSubmit={this.submitForm}>
                     <FormGroup>
-                        <Input type="text" placeholder="Votre Nom"/>
+                        <Input type="text" placeholder="Nom Complet"/>
                     </FormGroup>
                     <FormGroup>
-                        <Input type="email" placeholder="Votre Adresse E-mail"/>
+                        <Input type="tel" placeholder="Numéro de Téléphone"/>
                     </FormGroup>
                     <FormGroup>
                         <Button>Envoyer</Button>

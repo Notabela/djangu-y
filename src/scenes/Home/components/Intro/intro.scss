@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Aquatico Regular';
+    src: url('/Aquatico-Regular.otf');
+}
+
 $colorA: #05386B;
 $colorB: #379683;
 $colorC: #5CDB95;
@@ -10,14 +15,6 @@ $colorE: #EDF5E1;
     min-height: 600px;
 }
 
-#intro p{
-    font-size: 7rem;
-    font-family: 'Kaushan Script'; 
-    font-weight: normal; 
-    font-style: normal; 
-    color: black;
-}
-
 .intro-wrapper {
     background-color: $colorE;
     padding-bottom: 2%;
@@ -28,6 +25,10 @@ $colorE: #EDF5E1;
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
+    font-size: 7rem;
+    font-family: 'Aquatico Regular', 'Kaushan Script'; 
+    font-weight: normal; 
+    font-style: normal; 
 }
 
 #intro-courses{
@@ -39,12 +40,21 @@ $colorE: #EDF5E1;
     font-size: 1.2rem;
 }
 
+.shadows {
+    position: relative;
+    text-shadow: -16px 6px 15px #ced0d3;
+    color: grey;
+    letter-spacing: 0.1em;
+    user-select: none;
+    transition: all 0.25s ease-out;
+}
+
 @media screen and (max-width: 600px) and (min-width: 20px) {
     #intro{
         min-height: 500px;
     }
 
-    #intro p{
-        font-size: 5rem;
+    #topic{
+        font-size: 4rem;
     }
 }
